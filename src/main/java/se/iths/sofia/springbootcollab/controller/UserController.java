@@ -16,7 +16,8 @@ public class UserController {
         List<User> users = List.of(
                 new User(1L, "sofia", "sofia@example.com"),
                 new User(2L, "alex", "alex@example.com"),
-                new User(3L, "emma", "emma@example.com")
+                new User(3L, "emma", "emma@example.com"),
+                new User(4L, "anna", "anna@example.com")
         );
 
         model.addAttribute("users", users);
