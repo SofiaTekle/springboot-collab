@@ -18,7 +18,8 @@ public class CourseController {
         List<Course> courses = List.of(
                 new Course(1, "Java", 7),
                 new Course(2, "Webbutveckling", 10),
-                new Course(3, "Databaser", 5)
+                new Course(3, "Databaser", 5),
+                new Course(4, "JavaScript", 8)
         );
 
         model.addAttribute("courses", courses);
