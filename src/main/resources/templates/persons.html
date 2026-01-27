@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="sv" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Persons</title>
+    <title>Personer</title>
 </head>
 <body>
 
-<h1>Lista med personer</h1>
+<h1>Lista över personer</h1>
 
 <ul>
     <li th:each="person : ${persons}">
-        <strong th:text="${person.firstName}"></strong>
-        <span th:text="${person.lastName}"></span>
-        –
-        <span th:text="${person.age}"></span> år
-        –
+        <strong>Förnamn:</strong>
+        <span th:text="${person.firstName}"></span><br>
+
+        <strong>Efternamn:</strong>
+        <span th:text="${person.lastName}"></span><br>
+
+        <strong>Ålder:</strong>
+        <span th:text="${person.age}"></span> år<br>
+
+        <strong>E-post:</strong>
         <span th:text="${person.email}"></span>
     </li>
 </ul>
