@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="sv" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Studenter</title>
 </head>
 <body>
+
+<h1>Lista över studenter</h1>
+
 <ul>
-    <li th:each="students : ${students}">
-        <strong th:text="${students.firstName}"></strong>
-        <span th:text="${students.lastName}"></span>
-        <span th:text="${students.program}"></span>
+    <li th:each="student : ${students}">
+        <strong>Förnamn:</strong>
+        <span th:text="${student.firstName}"></span><br>
+
+        <strong>Efternamn:</strong>
+        <span th:text="${student.lastName}"></span><br>
+
+        <strong>Program:</strong>
+        <span th:text="${student.program}"></span>
     </li>
 </ul>
 
