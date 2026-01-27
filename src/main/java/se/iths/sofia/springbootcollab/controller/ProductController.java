@@ -16,7 +16,9 @@ public class ProductController {
         List<Product> products = List.of(
                 new Product("Mobiltelefon", "Samsung Galaxy S24", 12999.0),
                 new Product("Surfplatta", "iPad", 14999.0),
-                new Product("Laptop", "Acer Aspire", 16999.0)
+                new Product("Laptop", "Acer Aspire", 16999.0),
+                new Product("Tvättmaskin", "Miele", 19999.0),
+                new Product("Kyl/frys", "Siemens DX124", 4990.0)
         );
         model.addAttribute("products", products);
         return "products";
