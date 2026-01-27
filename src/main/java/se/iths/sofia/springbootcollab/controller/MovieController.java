@@ -16,7 +16,9 @@ public class MovieController {
         List<Movie> movies = List.of(
                 new Movie("Harry Potter", 2001, "Fantasy"),
                 new Movie("Good Will Hunting", 1998, "Drama"),
-                new Movie("Inception", 2010, "Sci-Fi")
+                new Movie("Inception", 2010, "Sci-Fi"),
+                new Movie("Interstellar", 2014, "Sci-Fi / Äventyr / Drama"),
+                new Movie("Home Alone", 1990, "Familj / Komedi")
         );
 
         model.addAttribute("movies", movies);
