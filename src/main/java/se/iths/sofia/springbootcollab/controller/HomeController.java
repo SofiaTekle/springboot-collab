@@ -19,17 +19,5 @@ public class HomeController {
         return "home";
     }
 
-    @GetMapping("/persons")
-    public String getPersons(Model model) {
-
-        List<Persons> persons = List.of(
-                new Persons("Anna", "Eriksson", 25, "anna.eriksson@gmail.com"),
-                new Persons("Erik", "Eriksson", 30, "erik.eriksson@yahoo.com"),
-                new Persons("Samuel", "Svensson", 28, "sara.svensson@gmail.com")
-        );
-
-        model.addAttribute("persons", persons);
-        return "persons";
-    }
 
 }
