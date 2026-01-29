@@ -1,0 +1,22 @@
+package se.iths.sofia.springbootcollab.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/")
+public class SaraHomeController {
+    @GetMapping
+    public String home(Model model) {
+        model.addAttribute("greeting", "Välkommen Sara");
+        return "home";
+    }
+}
+
+
+
+
+
+
